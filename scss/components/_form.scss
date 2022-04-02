@@ -1,0 +1,87 @@
+/* Form */
+.form {
+  position: relative;
+  top: -5rem;
+  border-radius: 3rem;
+  border-top-left-radius: 0;
+  background-color: $white;
+  padding: 4.5rem 3.5rem;
+
+  &__containerBtn {
+    display: flex;
+    position: absolute;
+    top: -6.5rem;
+    left: 0;
+    background: $white;
+    padding: 0.8rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @include lg {
+      flex-direction: column;
+    }
+  }
+
+  &__containerInput {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 0.2rem solid #dbdbdb;
+    border-radius: 2rem;
+    column-gap: 3rem;
+    padding: 3.5rem 1.5rem;
+
+    label {
+      display: block;
+      color: $gray;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      font-weight: $font-bold;
+      font-size: 1.7rem;
+      width: 100%;
+    }
+
+    &:nth-child(1) {
+      flex-grow: 1;
+    }
+
+    &:nth-child(2) {
+      flex-grow: 2;
+    }
+  }
+
+  &__iconCircle {
+    position: relative;
+    justify-self: center;
+    border-radius: 100%;
+    border: 1px dashed $gray;
+    width: 3.3rem;
+    height: 3.3rem;
+
+    img {
+      @extend %abs-center;
+      width: 1.5rem;
+    }
+  }
+
+  &__button {
+    border-radius: 100%;
+    background-color: $secondary-color;
+    height: 11.5rem;
+    width: 11.5rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-right: auto;
+    img {
+      width: 5rem;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+/* Layout */
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 120rem;
+}
+
+.section {
+  padding: 8rem 0;
+}
+
+.flex {
+  display: flex;
+
+  &--alignCenter {
+    align-items: center;
+  }
+
+  &--alignEnd {
+    align-items: flex-end;
+  }
+
+  &--justifySpace {
+    justify-content: space-between;
+  }
+}
+
+/* Margin & Padding */
+.pl-15 {
+  padding-left: 1.5rem;
+}
+
+.mt-18 {
+  margin-top: 1.8rem;
+}
+
+.mt-50 {
+  margin-top: 5rem;
+}
+
+/* Nav */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @extend %flex-center;
+  height: 7.2rem;
+  z-index: 999;
+  transition: background 0.2s ease;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 4.5rem;
+    font-weight: $font-regular;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+
+    li {
+      a {
+        color: $white;
+        font-size: 1.8rem;
+        font-weight: $font-regular;
+        margin-right: 5.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    img {
+      cursor: pointer;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    @include md {
+      display: block;
+    }
+  }
+
+  &--active {
+    background-color: $secondary-color;
+  }
+}
+
+/* Header */
+.header {
+  background: url("/images/image1.png") center / cover;
+  color: $white;
+  height: 100vh;
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  &__title {
+    text-align: center;
+    line-height: clamp(50px, 6vw, 10rem);
+    font-size: clamp(40px, 6vw, 8rem);
+    font-weight: $font-bold;
+  }
+
+  &__txt {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  &__container {
+    @extend %flex-center;
+    flex-direction: column;
+    height: 100%;
+  }
+}

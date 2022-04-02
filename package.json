@@ -1,0 +1,13 @@
+{
+  "name": "landing-page-treloo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Axel Po <axelpoin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "sass": "^1.49.11"
+  }
+}

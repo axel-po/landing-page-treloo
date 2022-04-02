@@ -1,0 +1,12 @@
+/* Section Register */
+.register {
+  &__container {
+    @extend %flex-center;
+    flex-direction: column;
+    height: 40rem;
+    width: 100%;
+    border-radius: 9rem;
+    padding: 1.5rem;
+    background: url("/images/image10.png") no-repeat center / cover;
+  }
+}

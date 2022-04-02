@@ -1,0 +1,41 @@
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: $secondary-color;
+  background-color: $white;
+  padding: 1.5rem 3.5rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+
+  &--form {
+    @extend %flex-center;
+    border-radius: 1.5rem;
+    width: 86px;
+    height: 50px;
+    font-weight: $font-bold;
+
+    span {
+      margin-left: 0.8rem;
+    }
+
+    &--active {
+      background-color: #d8e7fd;
+    }
+  }
+
+  &--offers {
+    padding: 1.2rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.6rem;
+    background-color: #f2f6ff;
+  }
+
+  &--primary {
+    background-color: #3e86f5;
+    color: $white;
+    font-weight: $font-very-light;
+    box-shadow: 0 7px 13px 2px #d7e3f5;
+    font-size: 1.3rem;
+  }
+}

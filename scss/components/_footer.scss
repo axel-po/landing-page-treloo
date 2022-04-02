@@ -1,0 +1,21 @@
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3rem;
+  padding-bottom: 6rem;
+
+  &__nav {
+    li {
+      a {
+        color: #3e3e3e;
+      }
+    }
+  }
+}
+
+.footer__nav li:last-child a {
+  margin-right: 0;
+}

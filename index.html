@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treloo</title>
+    <!-- <link rel="stylesheet" href="../public/css/index.css" /> -->
+    <link rel="stylesheet" href="scss/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__wrapper container">
+          <h1 class="nav__logo">Treloo</h1>
+          <div class="nav__container">
+            <ul class="nav__links">
+              <li><a href="#">Review</a></li>
+              <li><a href="#">Tips</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#">Log</a></li>
+            </ul>
+            <button class="btn">log</button>
+          </div>
+          <div class="nav__burger">
+            <button role="button">
+              <img role="button" src="/icons/icon-burger.svg" alt="icon de menu burger" />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__container container">
+        <h2 class="header__title">Discover Your Life, <br />Travel Where You Want</h2>
+        <p class="header__txt title--center">Would you explore natur paradise in the world, let's find the best destination in world with us.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <form class="form">
+        <div class="form__containerBtn">
+          <button class="btn--form btn--form--active">
+            <img src="/icons/icon-plane-blue.svg" alt="avion" />
+            <span>Fight</span>
+          </button>
+          <button class="btn--form">
+            <img src="/icons/icon-hotel.svg" alt="hotel" />
+            <span>Hotel</span>
+          </button>
+        </div>
+
+        <div class="form__container">
+          <div class="form__containerInput">
+            <div class="form-group">
+              <label for="livingFrom">Living From</label>
+              <input type="text" id="livingFrom" name="livingFrom" value="Dubai" />
+            </div>
+            <div class="form__iconCircle">
+              <img src="icons/icon-plane-gray.svg" alt="avion" />
+            </div>
+            <div class="form-group">
+              <label for="goingTo">Going To</label>
+              <input type="text" id="goingTo" name="goingTo" value="New York" />
+            </div>
+          </div>
+          <div class="form__containerInput">
+            <div class="form-group">
+              <label for="leave">Leave</label>
+              <input type="text" id="leave" name="leave" value="23 Jan, Sat" />
+            </div>
+            <div class="form__iconCircle">
+              <img src="/icons/icon-plane-gray.svg" alt="avion" />
+            </div>
+            <div class="form-group">
+              <label for="return">Return</label>
+              <input type="text" id="return" name="return" value="14 Jan, Thu" />
+            </div>
+          </div>
+          <button type="submit" class="form__button">
+            <img src="/icons/icon-search.svg" alt="loupe" />
+          </button>
+        </div>
+      </form>
+
+      <section class="section offers">
+        <h2 class="title title--center">Special Upcoming Offers</h2>
+        <div class="tabs">
+          <div class="tabs__items tabs__items--active">Team</div>
+          <div class="tabs__items">Couple</div>
+          <div class="tabs__items">Family</div>
+        </div>
+        <div class="offers__container">
+          <article class="offers__content anim">
+            <img class="offers__img" src="/images/image2.png" alt="plage" />
+            <div class="offers__data">
+              <div class="flex flex--alignCenter">
+                <span class="offers__span">Relax</span>
+                <p class="txt txt--small">3 Days, 3 Nights</p>
+              </div>
+              <div class="flex flex--alignEnd flex--justifySpace">
+                <div>
+                  <h3 class="offers__title">Loga Sea</h3>
+                  <p class="txt txt--black txt--bold">700$ <span class="txt txt--small">/Person</span></p>
+                </div>
+                <button class="btn btn--offers">Book now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="offers__content anim">
+            <img class="offers__img" src="/images/image3.png" alt="ca" />
+            <div class="offers__data">
+              <div class="flex flex--alignCenter">
+                <span class="offers__span offers__span--violet">Adventure</span>
+                <p class="txt txt--small">4 Days, 3 Nights</p>
+              </div>
+              <div class="flex flex--alignEnd flex--justifySpace">
+                <div>
+                  <h3 class="offers__title">Ansgar Scheffold</h3>
+                  <p class="txt txt--black txt--bold">400$ <span class="txt txt--small">/Person</span></p>
+                </div>
+                <button class="btn btn--offers">Book now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="offers__content anim">
+            <img class="offers__img" src="/images/image4.png" alt="montagnes" />
+            <div class="offers__data">
+              <div class="flex flex--alignCenter">
+                <span class="offers__span">Relax</span>
+                <p class="txt txt--small">7 Days, 6 Nights</p>
+              </div>
+              <div class="flex flex--alignEnd flex--justifySpace">
+                <div>
+                  <h3 class="offers__title">Lona X</h3>
+                  <p class="txt txt--black txt--bold">340$ <span class="txt txt--small">/Person</span></p>
+                </div>
+                <button class="btn btn--offers">Book now</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="travel section">
+        <div class="travel__img anim">
+          <img src="/images/image5.png" alt="travel" />
+          <div class="travel__bubble">
+            <p>5000+</p>
+            <p>Tourists</p>
+          </div>
+        </div>
+        <article class="traval__txt anim">
+          <h2 class="title travel__title">Travel Any Corner of The World With us</h2>
+          <p class="txt">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur numquam voluptas consectetur eligendi libero reprehenderit nulla quidem
+            amet quia. Incidunt, natus modi? Esse repellendus, numquam, commodi, nam dolorem iure suscipit optio aut eveniet quisquam libero facilis
+            asperiores explicabo. Explicabo ducimus provident molestias tempora molestiae iste? <br /><br />
+          </p>
+
+          <p class="txt">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto numquam totam modi maiores neque ea laboriosam tempore sit
+            fugit.
+          </p>
+
+          <button class="btn btn--primary travel__btn">Contact Us</button>
+        </article>
+      </section>
+
+      <section class="recommended section">
+        <h2 class="title title--center">Recommended Destination</h2>
+        <div class="tabs">
+          <div class="tabs__items tabs__items--active">Popular</div>
+          <div class="tabs__items">Adventure</div>
+          <div class="tabs__items">Beath</div>
+        </div>
+        <div class="recommended__wrapper">
+          <article class="recommended__container">
+            <div class="recommended__img">
+              <div class="recommended__note"><img src="/icons/icon-star.svg  " alt="étoiles" /><span>3.4</span></div>
+              <img class="recommended__img" src="/images/image6.png" alt="Kina Mountain" />
+            </div>
+            <div class="pl-15 mt-18">
+              <h3 class="title title--small">Kina Mountain</h3>
+              <p class="txt txt--small flex"><img src="/icons/icon-map.svg" alt="map" /> Cambodia</p>
+            </div>
+          </article>
+          <article class="recommended__container">
+            <div class="recommended__img">
+              <div class="recommended__note"><img src="/icons/icon-star.svg  " alt="étoiles" /><span>4.5</span></div>
+              <img class="recommended__img" src="/images/image7.png" alt="Kina Mountain" />
+            </div>
+            <div class="pl-15 mt-18">
+              <h3 class="title title--small">Kina Mountain</h3>
+              <p class="txt txt--small flex"><img src="/icons/icon-map.svg" alt="map" /> Cambodia</p>
+            </div>
+          </article>
+          <article class="recommended__container">
+            <div class="recommended__img">
+              <div class="recommended__note"><img src="/icons/icon-star.svg  " alt="étoiles" /><span>4.2</span></div>
+              <img class="recommended__img" src="/images/image8.png" alt="Kina Mountain" />
+            </div>
+            <div class="pl-15 mt-18">
+              <h3 class="title title--small">Kina Mountain</h3>
+              <p class="txt txt--small flex"><img src="/icons/icon-map.svg" alt="map" /> Cambodia</p>
+            </div>
+          </article>
+          <article class="recommended__container">
+            <div class="recommended__img">
+              <div class="recommended__note"><img src="icons/icon-star.svg  " alt="étoiles" /><span>3.5</span></div>
+              <img class="recommended__img" src="/images/image9.png" alt="Kina Mountain" />
+            </div>
+            <div class="pl-15 mt-18">
+              <h3 class="title title--small">Kina Mountain</h3>
+              <p class="txt txt--small flex"><img src="/icons/icon-map.svg" alt="map" /> Cambodia</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials section">
+        <div class="testimonials__wrapper">
+          <article class="testimonials__container">
+            <p class="txt txt--black txt--bold">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, et? Laborum pariatur accusamus asperiores, minus animi libero
+              cupiditate perspiciatis nesciunt aspernatur nam,
+            </p>
+            <p class="testimonials__author">-Vand D</p>
+            <span class="txt testimonials__span">Happy Treloo</span>
+            <img class="testimonials__img" src="/images/portrait1.png" alt="portrait1" />
+          </article>
+          <article class="testimonials__container">
+            <p class="txt txt--black txt--bold">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, et? Laborum pariatur accusamus asperiores, minus animi libero
+              cupiditate perspiciatis nesciunt aspernatur nam,
+            </p>
+            <p class="testimonials__author">-Tru vio</p>
+            <span class="txt testimonials__span">Happy Treloo</span>
+            <img class="testimonials__img" src="/images/portrait2.png" alt="portrait2" />
+          </article>
+        </div>
+      </section>
+
+      <section class="register section">
+        <div class="register__container">
+          <h3 class="title title--white title--center">
+            Don't Miss The 50% Discount if <br />
+            You register Today
+          </h3>
+          <button class="btn mt-50">Register Today</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="txt">&copy; 2022 Treloo LLC - All right reserved.</p>
+
+      <nav class="footer__nav">
+        <ul class="nav__links">
+          <li><a href="#">Review</a></li>
+          <li><a href="#">Tips</a></li>
+          <li><a href="#">Alerts</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

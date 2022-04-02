@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include xs {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $body-font;
+  background-color: $body-color;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+/* Animation */
+.anim {
+  visibility: hidden;
+  opacity: 0;
+}

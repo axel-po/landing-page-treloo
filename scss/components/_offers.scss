@@ -1,0 +1,63 @@
+/* Section offers */
+.offers {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  &__content {
+    position: relative;
+    padding: 2rem 5rem 3rem 2rem;
+    border-radius: 3rem;
+    background-color: $white;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-height: 29.5rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4.5rem;
+  }
+
+  &__data {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+
+    &--translate {
+      transform: rotate(90deg);
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.9rem;
+      color: $gray;
+    }
+  }
+
+  &__span {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.2rem;
+    background-color: #fcddec;
+    color: #f281bb;
+    font-size: 1.3rem;
+    margin-right: 0.9rem;
+
+    &--violet {
+      background-color: #f1f1fd;
+      color: #8282f2;
+    }
+  }
+
+  &__title {
+    margin: 1.2rem 0;
+  }
+}
